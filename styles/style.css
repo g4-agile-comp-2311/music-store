@@ -9,3 +9,23 @@ h1 {
 p {
     font-family: 'Times New Roman', Times, serif;
 }
+
+nav ul {
+    width: 40vw;
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: -1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: blue;
+    text-decoration: underline;
+}
