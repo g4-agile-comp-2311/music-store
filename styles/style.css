@@ -36,9 +36,11 @@ img {
     border-radius: 10px;
 }
 
-main section {
+section {
     text-align: center;
-    margin-bottom: 5rem;
+    margin: 0 5rem 2.5rem 5rem;
+    border-bottom: 1px black solid;
+    padding-bottom: 2.5rem;
 }
 
 main section ul {
