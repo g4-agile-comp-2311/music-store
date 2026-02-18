@@ -46,3 +46,42 @@ section {
 main section ul {
     list-style-type: none;
 }
+
+footer section {
+    all: unset;
+}
+
+footer {
+    padding: 2rem;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer section ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+}
+
+footer section ul li {
+    font-size: 1.5rem;
+    padding-left: 2rem;
+}
+
+footer section ul li a {
+    color: black;
+}
+
+footer section ul li a i {
+    text-align: center;
+}
+
+.iconHover {
+    transition: all 0.5s ease-in-out;
+}
+
+.iconHover:hover {
+    scale: 1.5;
+}
