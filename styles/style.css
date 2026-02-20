@@ -35,6 +35,11 @@ img {
     border: 5px solid darkblue;
     border-radius: 10px;
 }
+.contact-image {
+    width: 40%;
+    border: 5px solid darkblue;
+    border-radius: 10px;
+}
 
 section {
     text-align: center;
@@ -84,4 +89,90 @@ footer section ul li a i {
 
 .iconHover:hover {
     scale: 1.5;
+}
+/* ======================
+   CONTACT LAYOUT (IMAGE + FORM)
+====================== */
+
+.contact-layout {
+    width: 90%;
+    margin: 2rem auto;
+
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;  /* image bigger than form */
+    gap: 2.5rem;
+    align-items: start;
+}
+
+/* override your global img { width:80% } */
+.contact-image {
+    width: 100%;
+    border: 5px solid darkblue;
+    border-radius: 10px;
+}
+
+/* FORM CARD */
+.contact-form {
+    width: 100%;
+    padding: 1.5rem;
+
+    background: white;
+    border: 5px solid darkblue;
+    border-radius: 10px;
+
+    text-align: left; /* overrides section center */
+}
+
+.contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+
+    border: 2px solid darkblue;
+    border-radius: 8px;
+
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+
+    background: darkblue;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: blue;
+    text-decoration: underline;
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 900px) {
+    .contact-layout {
+        grid-template-columns: 1fr;
+    }
 }

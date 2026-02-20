@@ -24,27 +24,28 @@
     <main>
         <h2>Contact</h2>
         <p>Questions, comments, or concerns? Contact us through one of the methods below!</p>
-
-        <img src="../imgs/record_box.jpeg" alt="box of records">
-
         <ul>
 
             <li>Phone: 250 222 2222</li>
             <li>Email: groovereocrds@email.com</li>
             <li>Address: 111 Fake St Fake City, BC</li>
         </ul>
-        <!-- modify this form HTML and place wherever you want your form -->
-        <form action="https://formspree.io/f/xlgwjqlp" method="POST">
-        <label>
-          Your email:
-          <input type="email" name="email">
-        </label>
-        <label> Your message: 
-            <textarea name="message"></textarea>
-        </label>
-        <!-- your other form fields go here -->
-        <button type="submit">Send</button>
-    </form>
+        <div class="contact-layout">
+            <img class="contact-image" src="../imgs/record_box.jpeg" alt="box of records">
+            <!-- modify this form HTML and place wherever you want your form -->
+            <form class="contact-form" action="https://formspree.io/f/xlgwjqlp" method="POST">
+                <div class="form-group">
+                <label> Your email:</label>
+                <input type="email" name="email">
+                </div>
+                <div class="form-group">
+                <label> Your message:</label>
+                <textarea name="message"></textarea>
+                <!-- your other form fields go here -->
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div> 
     </main>
 
     <footer>
